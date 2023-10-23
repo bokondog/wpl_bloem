@@ -5,13 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPL_Bloem"
         mc:Ignorable="d"
-        Name="MainScreen" Title="Bloemenwinkel Fans of Flora" Height="450" Width="800" Background="LightGray" MouseEnter="Window_MouseEnter">
+        Name="MainScreen" Title="Bloemenwinkel Fans of Flora" Height="450" Width="800" MinHeight="450" MinWidth="800" Background="LightGray" MouseEnter="Window_MouseEnter">
     <Grid>
+        <WrapPanel Margin="5">
+            <Button Name="BtnDutch" Click="BtnDutch_Click" Content="NL" Margin="0,0,5,0"></Button>
+            <Button Name="BtnEnglish" Click="BtnEnglish_Click" Content="EN"></Button>
+        </WrapPanel>
         <WrapPanel VerticalAlignment="Center" HorizontalAlignment="Center">
             <StackPanel VerticalAlignment="Center" Margin="25,0,50,0" Width="250">
+                <StackPanel>
+                    <TextBlock Name="TxtStoreTitle" HorizontalAlignment="Center" FontSize="20" Text="Bloemenwinkel"></TextBlock>
                 <TextBlock  HorizontalAlignment="Center" VerticalAlignment="Center" Text="Fans of Flora" FontSize="30"></TextBlock>
-                <Label Name="LblFlowerName" FontSize="20" HorizontalAlignment="Center"></Label>
-                <Label Name="LblFlowerPrice" FontSize="20" HorizontalAlignment="Center"></Label>
+                </StackPanel>
+                <Label Name="LblFlowerName" FontSize="20" HorizontalAlignment="Center" Content=""></Label>
+                <Label Name="LblFlowerPrice" FontSize="20" HorizontalAlignment="Center" Content=""></Label>
             </StackPanel>
             <StackPanel HorizontalAlignment="Right" VerticalAlignment="Center">
                 <WrapPanel HorizontalAlignment="Center" Margin="0,0,0,25">

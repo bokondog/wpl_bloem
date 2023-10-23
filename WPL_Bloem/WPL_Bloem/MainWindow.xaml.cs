@@ -26,6 +26,7 @@ namespace WPL_Bloem
         }
 
         Color defaultColor = Colors.LightGray;
+        string appLanguage = "NL";
 
         private void SetBackgroundColor(Color color)
         {
@@ -36,6 +37,52 @@ namespace WPL_Bloem
         private void ResetBackgroundColor()
         {
             SetBackgroundColor(defaultColor);
+        }
+
+        private void ShowStoreName()
+        {
+            if (appLanguage == "NL")
+            {
+                TxtStoreTitle.Text = "Bloemenwinkel";
+            }
+            else if (appLanguage == "EN")
+            {
+                TxtStoreTitle.Text = "Flower store";
+            }
+        }
+
+        private void ResetFlowerInfo()
+        {
+            LblFlowerName.Content = "";
+            LblFlowerPrice.Content = "";
+        }
+
+        private void ShowFlowerName(string dutchName, string englishName)
+        {
+            string labelText = "";
+            if (appLanguage == "NL")
+            {
+                labelText = "Naam: ";
+                LblFlowerName.Content = $"{labelText}{dutchName}";
+            }
+            else if (appLanguage == "EN")
+            {
+                labelText = "Name: ";
+                LblFlowerName.Content = $"{labelText}{englishName}";
+            }
+        }
+
+        private void ShowFlowerPrice(int price)
+        {
+            string labelText = appLanguage == "NL" ? "Prijs" : "Price";
+            LblFlowerPrice.Content = $"{labelText}: {price.ToString("c")}";
+        }
+
+        private void SetAppLanguage(string languageCode)
+        {
+            appLanguage = languageCode;
+            ResetFlowerInfo();
+            ShowStoreName();
         }
 
         private void Window_MouseEnter(object sender, MouseEventArgs e)
@@ -63,38 +110,39 @@ namespace WPL_Bloem
             SetBackgroundColor(Colors.Yellow);
         }
 
-        private void ShowFlowerName(string name)
-        {
-            LblFlowerName.Content = name;
-        }
-
-        private void ShowFlowerPrice(int price)
-        {
-            LblFlowerPrice.Content = price.ToString("c");
-        }
-
         private void ImgGold_MouseUp(object sender, MouseButtonEventArgs e)
         {
-            ShowFlowerName("Goudsbloem");
+            ShowFlowerName("Goudsbloem", "Marigold");
             ShowFlowerPrice(3);
         }
 
         private void ImgLavender_MouseUp(object sender, MouseButtonEventArgs e)
         {
-            ShowFlowerName("Lavendel");
+            ShowFlowerName("Lavendel", "Lavender");
             ShowFlowerPrice(10);
         }
 
         private void ImgRose_MouseUp(object sender, MouseButtonEventArgs e)
         {
-            ShowFlowerName("Roos");
+            ShowFlowerName("Roos", "Rose");
             ShowFlowerPrice(30);
         }
 
         private void ImgWilkens_MouseUp(object sender, MouseButtonEventArgs e)
         {
-            ShowFlowerName("Wilkens bitter");
+            ShowFlowerName("Wilkens bitter", "Golden trumpet");
             ShowFlowerPrice(15);
         }
+
+        private void BtnDutch_Click(object sender, RoutedEventArgs e)
+        {
+            SetAppLanguage("NL");
+        }
+
+        private void BtnEnglish_Click(object sender, RoutedEventArgs e)
+        {
+            SetAppLanguage("EN");
+        }
+
     }
 }
