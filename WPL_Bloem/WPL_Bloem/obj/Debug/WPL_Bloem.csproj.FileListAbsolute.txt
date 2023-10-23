@@ -1,0 +1,15 @@
+C:\Users\drhat\stuff\school\wpl\bloem\wpl_bloem\WPL_Bloem\WPL_Bloem\bin\Debug\WPL_Bloem.exe.config
+C:\Users\drhat\stuff\school\wpl\bloem\wpl_bloem\WPL_Bloem\WPL_Bloem\bin\Debug\WPL_Bloem.exe
+C:\Users\drhat\stuff\school\wpl\bloem\wpl_bloem\WPL_Bloem\WPL_Bloem\bin\Debug\WPL_Bloem.pdb
+C:\Users\drhat\stuff\school\wpl\bloem\wpl_bloem\WPL_Bloem\WPL_Bloem\obj\Debug\WPL_Bloem.csproj.AssemblyReference.cache
+C:\Users\drhat\stuff\school\wpl\bloem\wpl_bloem\WPL_Bloem\WPL_Bloem\obj\Debug\MainWindow.g.cs
+C:\Users\drhat\stuff\school\wpl\bloem\wpl_bloem\WPL_Bloem\WPL_Bloem\obj\Debug\App.g.cs
+C:\Users\drhat\stuff\school\wpl\bloem\wpl_bloem\WPL_Bloem\WPL_Bloem\obj\Debug\WPL_Bloem_MarkupCompile.cache
+C:\Users\drhat\stuff\school\wpl\bloem\wpl_bloem\WPL_Bloem\WPL_Bloem\obj\Debug\WPL_Bloem_MarkupCompile.lref
+C:\Users\drhat\stuff\school\wpl\bloem\wpl_bloem\WPL_Bloem\WPL_Bloem\obj\Debug\MainWindow.baml
+C:\Users\drhat\stuff\school\wpl\bloem\wpl_bloem\WPL_Bloem\WPL_Bloem\obj\Debug\WPL_Bloem.g.resources
+C:\Users\drhat\stuff\school\wpl\bloem\wpl_bloem\WPL_Bloem\WPL_Bloem\obj\Debug\WPL_Bloem.Properties.Resources.resources
+C:\Users\drhat\stuff\school\wpl\bloem\wpl_bloem\WPL_Bloem\WPL_Bloem\obj\Debug\WPL_Bloem.csproj.GenerateResource.cache
+C:\Users\drhat\stuff\school\wpl\bloem\wpl_bloem\WPL_Bloem\WPL_Bloem\obj\Debug\WPL_Bloem.csproj.CoreCompileInputs.cache
+C:\Users\drhat\stuff\school\wpl\bloem\wpl_bloem\WPL_Bloem\WPL_Bloem\obj\Debug\WPL_Bloem.exe
+C:\Users\drhat\stuff\school\wpl\bloem\wpl_bloem\WPL_Bloem\WPL_Bloem\obj\Debug\WPL_Bloem.pdb
