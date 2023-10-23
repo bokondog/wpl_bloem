@@ -7,16 +7,19 @@
         mc:Ignorable="d"
         Name="MainScreen" Title="Bloemenwinkel Fans of Flora" Height="450" Width="800" Background="LightGray" MouseEnter="Window_MouseEnter">
     <Grid>
-        <WrapPanel VerticalAlignment="Center" HorizontalAlignment="Left" Margin="50">
-            <TextBlock Margin="25,0,50,0" HorizontalAlignment="Center" VerticalAlignment="Center" Text="Fans of Flora" FontSize="30"></TextBlock>
+        <WrapPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <StackPanel VerticalAlignment="Center" Margin="25,0,50,0" Width="250">
+                <TextBlock  HorizontalAlignment="Center" VerticalAlignment="Center" Text="Fans of Flora" FontSize="30"></TextBlock>
+                <Label Name="LblFlowerName" FontSize="20" HorizontalAlignment="Center"></Label>
+            </StackPanel>
             <StackPanel HorizontalAlignment="Right" VerticalAlignment="Center">
                 <WrapPanel HorizontalAlignment="Center" Margin="0,0,0,25">
-                    <Image Name="ImgGold" Width="200" Source="img\gold.jpg" MouseEnter="ImgGold_MouseEnter" MouseLeave="Window_MouseEnter"></Image>
-                    <Image Name="ImgLavender" Width="200" Source="img\lavender.jpg" Margin="25,0,0,0" MouseEnter="ImgLavender_MouseEnter" MouseLeave="Window_MouseEnter"></Image>
+                    <Image Name="ImgGold" Width="200" Source="img\gold.jpg" MouseEnter="ImgGold_MouseEnter" MouseLeave="Window_MouseEnter" MouseUp="ImgGold_MouseUp"></Image>
+                    <Image Name="ImgLavender" Width="200" Source="img\lavender.jpg" Margin="25,0,0,0" MouseEnter="ImgLavender_MouseEnter" MouseLeave="Window_MouseEnter" MouseUp="ImgLavender_MouseUp"></Image>
                 </WrapPanel>
                 <WrapPanel HorizontalAlignment="Center">
-                    <Image Name="ImgRose" Width="200" Source="img\rose.jpg" MouseEnter="ImgRose_MouseEnter" MouseLeave="Window_MouseEnter"></Image>
-                    <Image Name="ImgWilkens" Width="200" Source="img\wilkens.jpg" Margin="25,0,0,0" MouseEnter="ImgWilkens_MouseEnter" MouseLeave="Window_MouseEnter"></Image>
+                    <Image Name="ImgRose" Width="200" Source="img\rose.jpg" MouseEnter="ImgRose_MouseEnter" MouseLeave="Window_MouseEnter" MouseUp="ImgRose_MouseUp"></Image>
+                    <Image Name="ImgWilkens" Width="200" Source="img\wilkens.jpg" Margin="25,0,0,0" MouseEnter="ImgWilkens_MouseEnter" MouseLeave="Window_MouseEnter" MouseUp="ImgWilkens_MouseUp"></Image>
                 </WrapPanel>
             </StackPanel>
         </WrapPanel>

@@ -63,9 +63,29 @@ namespace WPL_Bloem
             SetBackgroundColor(Colors.Yellow);
         }
 
-        private void ImgLavender_MouseLeave(object sender, MouseEventArgs e)
+        private void ShowFlowerName(string name)
         {
+            LblFlowerName.Content = name;
+        }
 
+        private void ImgGold_MouseUp(object sender, MouseButtonEventArgs e)
+        {
+            ShowFlowerName("Goudsbloem");
+        }
+
+        private void ImgLavender_MouseUp(object sender, MouseButtonEventArgs e)
+        {
+            ShowFlowerName("Lavendel");
+        }
+
+        private void ImgRose_MouseUp(object sender, MouseButtonEventArgs e)
+        {
+            ShowFlowerName("Roos");
+        }
+
+        private void ImgWilkens_MouseUp(object sender, MouseButtonEventArgs e)
+        {
+            ShowFlowerName("Wilkens bitter");
         }
     }
 }
