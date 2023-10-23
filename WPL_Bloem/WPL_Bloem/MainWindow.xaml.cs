@@ -24,5 +24,48 @@ namespace WPL_Bloem
         {
             InitializeComponent();
         }
+
+        Color defaultColor = Colors.LightGray;
+
+        private void SetBackgroundColor(Color color)
+        {
+            SolidColorBrush brush = new SolidColorBrush(color);
+            MainScreen.Background = brush;
+        }
+
+        private void ResetBackgroundColor()
+        {
+            SetBackgroundColor(defaultColor);
+        }
+
+        private void Window_MouseEnter(object sender, MouseEventArgs e)
+        {
+            ResetBackgroundColor();
+        }
+
+        private void ImgGold_MouseEnter(object sender, MouseEventArgs e)
+        {
+            SetBackgroundColor(Colors.Orange);
+        }
+
+        private void ImgLavender_MouseEnter(object sender, MouseEventArgs e)
+        {
+            SetBackgroundColor(Colors.Purple);
+        }
+
+        private void ImgRose_MouseEnter(object sender, MouseEventArgs e)
+        {
+            SetBackgroundColor(Colors.Red);
+        }
+
+        private void ImgWilkens_MouseEnter(object sender, MouseEventArgs e)
+        {
+            SetBackgroundColor(Colors.Yellow);
+        }
+
+        private void ImgLavender_MouseLeave(object sender, MouseEventArgs e)
+        {
+
+        }
     }
 }

@@ -5,18 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPL_Bloem"
         mc:Ignorable="d"
-        Title="Bloemenwinkel Fans of Flora" Height="450" Width="800" Background="LightGray">
+        Name="MainScreen" Title="Bloemenwinkel Fans of Flora" Height="450" Width="800" Background="LightGray" MouseEnter="Window_MouseEnter">
     <Grid>
         <WrapPanel VerticalAlignment="Center" HorizontalAlignment="Left" Margin="50">
             <TextBlock Margin="25,0,50,0" HorizontalAlignment="Center" VerticalAlignment="Center" Text="Fans of Flora" FontSize="30"></TextBlock>
             <StackPanel HorizontalAlignment="Right" VerticalAlignment="Center">
                 <WrapPanel HorizontalAlignment="Center" Margin="0,0,0,25">
-                    <Image Width="200" Source="img\gold.jpg"></Image>
-                    <Image Width="200" Source="img\lavender.jpg" Margin="25,0,0,0"></Image>
+                    <Image Name="ImgGold" Width="200" Source="img\gold.jpg" MouseEnter="ImgGold_MouseEnter" MouseLeave="Window_MouseEnter"></Image>
+                    <Image Name="ImgLavender" Width="200" Source="img\lavender.jpg" Margin="25,0,0,0" MouseEnter="ImgLavender_MouseEnter" MouseLeave="Window_MouseEnter"></Image>
                 </WrapPanel>
                 <WrapPanel HorizontalAlignment="Center">
-                    <Image Width="200" Source="img\rose.jpg"></Image>
-                    <Image Width="200" Source="img\wilkens.jpg" Margin="25,0,0,0"></Image>
+                    <Image Name="ImgRose" Width="200" Source="img\rose.jpg" MouseEnter="ImgRose_MouseEnter" MouseLeave="Window_MouseEnter"></Image>
+                    <Image Name="ImgWilkens" Width="200" Source="img\wilkens.jpg" Margin="25,0,0,0" MouseEnter="ImgWilkens_MouseEnter" MouseLeave="Window_MouseEnter"></Image>
                 </WrapPanel>
             </StackPanel>
         </WrapPanel>
