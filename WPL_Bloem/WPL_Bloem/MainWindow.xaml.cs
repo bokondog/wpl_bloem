@@ -68,24 +68,33 @@ namespace WPL_Bloem
             LblFlowerName.Content = name;
         }
 
+        private void ShowFlowerPrice(int price)
+        {
+            LblFlowerPrice.Content = price.ToString("c");
+        }
+
         private void ImgGold_MouseUp(object sender, MouseButtonEventArgs e)
         {
             ShowFlowerName("Goudsbloem");
+            ShowFlowerPrice(3);
         }
 
         private void ImgLavender_MouseUp(object sender, MouseButtonEventArgs e)
         {
             ShowFlowerName("Lavendel");
+            ShowFlowerPrice(10);
         }
 
         private void ImgRose_MouseUp(object sender, MouseButtonEventArgs e)
         {
             ShowFlowerName("Roos");
+            ShowFlowerPrice(30);
         }
 
         private void ImgWilkens_MouseUp(object sender, MouseButtonEventArgs e)
         {
             ShowFlowerName("Wilkens bitter");
+            ShowFlowerPrice(15);
         }
     }
 }
